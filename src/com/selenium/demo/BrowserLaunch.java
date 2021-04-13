@@ -1,5 +1,6 @@
 package com.selenium.demo;
 
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -13,7 +14,7 @@ public class BrowserLaunch {
 		amazon.navigate().back();
 		String currentUrl = amazon.getCurrentUrl();
 		System.out.println(currentUrl);
-		amazon.quit();
+		TakesScreenshot ts = (TakesScreenshot) amazon;
 	}
 
 }
